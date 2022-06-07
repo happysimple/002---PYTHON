@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>安装 &mdash; Python 1.0.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Python" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">安装</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#anaconda">1.安装Anaconda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">2.配置虚拟环境</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#jupyter-notebook">3.配置Jupyter notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">4.安装深度学习框架</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>安装</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/001---安装/index.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>安装<a class="headerlink" href="#id1" title="Permalink to this headline"></a></h1>
+<section id="anaconda">
+<h2>1.安装Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline"></a></h2>
+<p>安装略.</p>
+<p>1.1 更新pip</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip3 install --upgrade pip
+</pre></div>
+</div>
+<p>1.2 更新conda</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda update conda
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h2>2.配置虚拟环境<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<p>2.1 建立虚拟环境</p>
+<img src="..\_static\1.png" alt="1" style="zoom:40%;" />
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda create -n deeplearning <span class="nv">python</span><span class="o">=</span><span class="m">3</span>.7
+</pre></div>
+</div>
+<p>2.2 激活虚拟环境</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>activate deeplearning
+</pre></div>
+</div>
+<p>2.3 退出虚拟环境</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda deactivate
+</pre></div>
+</div>
+</section>
+<section id="jupyter-notebook">
+<h2>3.配置Jupyter notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline"></a></h2>
+<p>3.1 激活虚拟环境</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>activate deeplearning
+</pre></div>
+</div>
+<p>3.2 加入虚拟环境内核</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install nb_conda
+conda install ipykernel
+conda install -n deeplearning ipykernel
+python -m ipykernel install --user --name deeplearning
+</pre></div>
+</div>
+<p>3.3 启动jupyter notebook</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter notebook
+</pre></div>
+</div>
+<p>3.4 添加插件</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install jupyter_contrib_nbextensions -i https://pypi.tuna.tsinghua.edu.cn/simple
+jupyter contrib nbextension install --user
+pip install jupyter_nbextensions_configurator -i 
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>4.安装深度学习框架<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h2>
+<p>4.1 安装Pytorch</p>
+<p>可以参考<a class="reference external" href="https://datawhalechina.github.io/thorough-pytorch/%E7%AC%AC%E4%B8%80%E7%AB%A0/index.html">深入浅出PyTorch</a></p>
+<p>①查看是否有GPU</p>
+<img src="..\_static\2.png" alt="1" style="zoom:40%;" />
+<p>②查看CUDA版本</p>
+<img src="..\_static\3.png" alt="1" style="zoom:40%;" />
+<p>③获取Pytorch安装命令</p>
+<img src="..\_static\4.png" alt="1" style="zoom:40%;" />
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>% 以网页为准！这里只是个例子！
+conda install pytorch torchvision torchaudio <span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span>.3 -c pytorch
+</pre></div>
+</div>
+<p>④激活虚拟环境进行安装</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>activate deeplearning
+conda install pytorch torchvision torchaudio <span class="nv">cudatoolkit</span><span class="o">=</span><span class="m">11</span>.3 -c pytorch
+</pre></div>
+</div>
+<p>如果下载CPU版本的Pytorch，可以跳过上述步骤，使用如下步骤下载（使用了临时清华源！）</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>activate deeplearning
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple torch
+</pre></div>
+</div>
+<p>⑤验证Pytorch是否支持CUDA</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python
+import torch
+torch.cuda.is_available<span class="o">()</span>
+</pre></div>
+</div>
+<p>4.2 安装Tensorflow</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>activate deeplearning
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, 王开心.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
