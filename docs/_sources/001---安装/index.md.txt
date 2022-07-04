@@ -1,4 +1,4 @@
-# 安装
+# 环境配置
 
 ## 1.安装Anaconda
 
@@ -71,9 +71,7 @@ pip install jupyter_nbextensions_configurator -i
 
 ## 4.安装深度学习框架
 
-4.1 安装Pytorch
-
-可以参考[深入浅出PyTorch](https://datawhalechina.github.io/thorough-pytorch/第一章/index.html)
+**4.1 安装Pytorch**
 
 ①查看是否有GPU
 
@@ -83,7 +81,7 @@ pip install jupyter_nbextensions_configurator -i
 
 <img src="..\_static\3.png" alt="1" style="zoom:40%;" />
 
-③获取Pytorch安装命令
+③获取Pytorch安装命令（[见Pytorch官网](https://pytorch.org/get-started/locally/)）
 
 <img src="..\_static\4.png" alt="1" style="zoom:40%;" />
 
@@ -114,7 +112,7 @@ import torch
 torch.cuda.is_available()
 ```
 
-4.2 安装Tensorflow
+**4.2 安装Tensorflow**
 
 ```bash
 activate deeplearning
